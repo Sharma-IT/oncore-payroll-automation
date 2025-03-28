@@ -2,7 +2,7 @@
 
 This Cypress test suite automates the process of submitting your weekly payroll timesheet for all weekdays on payroll sites powered by Oncore. The suite includes a test case for adding timesheet entries for each weekday and submitting the timesheet.
 
-**Note:** You may need to periodically update the `rateDropdown` select value in `cypress/support/commands.js`, at intervals of a few months.
+**Note:** If the test fails, the `rateDropdown` select value in `cypress/support/commands.js` probably needs to be updated. Feel free to update it yourself and create a PR, or please, raise an issue.
 
 ## Table of Contents
 
@@ -75,7 +75,7 @@ npx cypress run --spec cypress/e2e/timesheet-automation.cy.js
 
 ## Test Structure
 
-The test suite includes a single test case, `Submit the timesheet of the current week`, which submits the weekly timesheet for all weekdays. The test case is defined in `cypress/e2e/timesheet-automation.cy.js`.
+The test suite includes a single test case: `Submit the timesheet of the current week`. Which submits the weekly timesheet for all weekdays. The test case is defined in `cypress/e2e/timesheet-automation.cy.js`.
 
 ### Custom Commands
 
@@ -87,7 +87,7 @@ Custom Cypress commands are defined in `cypress/support/commands.js`:
 
 ### Selectors
 
-Element selectors used in the test suite are defined in `cypress/support/selectors.js`. These selectors improve test readability and maintainability by centralising element identification.
+Element selectors used in the test suite are defined in `cypress/support/selectors.js`.
 
 ## Contributing
 
