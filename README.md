@@ -2,8 +2,6 @@
 
 This Cypress test suite automates the process of submitting your weekly payroll timesheet for all weekdays on payroll sites powered by Oncore. The suite includes a test case for adding timesheet entries for each weekday and submitting the timesheet.
 
-**Note:** If the test fails, the `rateDropdown` select value in `cypress/support/commands.js` probably needs to be updated. Feel free to update it yourself and create a PR, or please, raise an issue.
-
 ## Table of Contents
 
 - [Getting Started](#getting-started)
